@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lavastore">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LavaStore">
+        <activity
+            android:name=".ar.Ar4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ar.Ar3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ar.Ar2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".loadingPages.ArLoadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ar.ArMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ar.Ar1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".streams.StreamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loadingPages.StreamLoadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LavaStoremainPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loadingPages.LavaStoreLoadingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loadingPages.LoadingGame"
+            android:exported="false" />
+        <activity
+            android:name=".games.Game1"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".games.GameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".games.Games"
+            android:exported="false" />
+        <activity
+            android:name=".webActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+    <uses-feature android:name="android.hardware.camera.ar" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>
